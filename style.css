@@ -1,0 +1,70 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    color: rgb(201, 194, 214);
+    font-size: 2rem;
+}
+
+body{
+    background: linear-gradient(rgba(10, 0, 30, 0.484), rgba(19, 1, 59, 0.63)), url('bg.jpg');
+
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.lam{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+img {
+    border-radius: 30px;
+    max-width: 60%;  /* A szülő szélességéhez igazodik */
+   
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+@media only screen and (max-width:1500px) {
+    *{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width:1200px) {
+    *{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width:700px) {
+    *{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:200px) {
+    *{
+        font-size: 0.6rem;
+    }
+}
